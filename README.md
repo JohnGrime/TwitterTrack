@@ -25,7 +25,7 @@ To use the example below, we assume the presence of a Bash compatible shell (mos
 
 ## Example usage
 
-The `twitter_test.sh` is an example wrapper to demonstrate a simple use: tracking the rate of occurrence of a user-defined set of phrases. This script assumes the presence of a `sensitive.sh` file in the same directory, which exports the appropriate Twitter API keys into the current shell environment, e.g.:
+The `twitter_test.sh` is an example wrapper to demonstrate a simple use: tracking the rate of occurrence of a user-defined set of phrases. This script assumes the presence of a `twitter_access_keys.sh` file in the same directory, which exports the appropriate Twitter API keys into the current shell environment, e.g.:
 
 	export TWITTER_CONSUMER_KEY=XXXXXXXXXX
 	export TWITTER_CONSUMER_SECRET=XXXXXXXXXX
