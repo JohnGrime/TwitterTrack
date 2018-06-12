@@ -2,7 +2,7 @@
 
 A simple example interface into Twitter's stream API.
 
-Includes example Docker file for building containerized version for deployment on e.g. Amazon Web Services.
+Includes example Docker file for building containerized derivatives for deployment on e.g. Amazon Web Services.
 
 ## Requirements
 
