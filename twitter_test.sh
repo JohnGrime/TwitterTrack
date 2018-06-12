@@ -39,7 +39,10 @@ function WriteGnuplotFile() {
 if [[ ${#} -lt 1 ]];
 then
 	echo ""
-	echo "Usage: ${0} word1 [word2 ...]"
+	echo "Usage: ${0} phrase1 [phrase2 ...]"
+	echo ""
+	echo "Notes:"
+	echo "  - Multi-word phrases should be \"enclosed in double quotes\""
 	echo ""
 	exit
 fi
