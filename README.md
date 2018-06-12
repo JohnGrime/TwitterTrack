@@ -51,7 +51,7 @@ Let's sample real-time mentions of the world's great metropolises:
 
 One would naturally expect St. Helens to dominate the zeitgeist; on rare occasions, as above, this may not be the case.
 
-Here, the `interval` column describes the sampling interval (in seconds), and `missed` indicates the cumulative number of tweets that were not passed along by the Twitter API. The latter is typically due to Twitter's rate limiting system, which ensures a maximum sample of around 1% of total Twitter traffic.
+Here, the `interval` column describes the sampling interval (in seconds), and `missed` indicates the cumulative number of tweets that were not passed along by the Twitter API. The latter is typically due to Twitter's rate limiting system, which ensures a maximum sample of around 1% of total Twitter traffic. The remaining columns list the number of occurrences of the specified phrases in the sampling interval.
 
 If you have `gnuplot` installed, the outout of `twitter_test.sh` can be turned into a graph like so ...
 
