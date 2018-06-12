@@ -73,6 +73,7 @@ To use the containerized example, build the Docker image from the appropriate di
 The default entry point for the Docker image will launch a shell wherein you can run the example script. For example, assuming an interactive shell (`-it`) and discarding modifications to the container file system on exit (`--rm`):
 
 	docker run -it --rm stuff/twittertrack
+	/ # ./twitter_test.sh London "New York" Paris "St. Helens"
 	   Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
 	12/5/2018 2:15:55               1.686                   0                   1                   1                   1                   0
 	12/5/2018 2:15:57               2.001                   0                   3                   4                   1                   0
