@@ -32,12 +32,11 @@ The `twitter_test.sh` is an example wrapper to demonstrate a simple use: trackin
 	export TWITTER_ACCESS_TOKEN_KEY=XXXXXXXXXX
 	export TWITTER_ACCESS_TOKEN_SECRET=XXXXXXXXXX
 
-With the Twitter access tokens thus defined, we may invoke the wrapper script: let's track mentions of the world's great metropolises:
+With the Twitter access keys thus defined, we may invoke the example wrapper script, `twitter_test.sh`.
+
+Let's sample real-time mentions of the world's great metropolises:
 
 	./twitter_test.sh London "New York" Paris "St. Helens"
-
-My testing produced the following output on `stdout`:
-
 	    Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
 	11/5/2018 23:29:10                1.71                   0                   4                   5                   3                   0
 	11/5/2018 23:29:12               2.004                   0                   1                   1                   4                   0
