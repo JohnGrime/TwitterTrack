@@ -16,7 +16,7 @@ Optional:
 
 * [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) compatible shell (for example script)
 * [gnuplot](http://www.gnuplot.info) (for easy plotting of example output data)
-* Docker (for containerization example)
+* [Docker](https://www.docker.com) (for containerization example)
 
 ## Platform compatibility
 
