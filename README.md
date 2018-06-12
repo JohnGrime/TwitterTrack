@@ -7,7 +7,7 @@ Includes example Docker file for building containerized version for deployment o
 ## Requirements
 
 * Node.js
-* twitter-lite node package
+* `twitter-lite` node package
 * [Twitter developer access tokens](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html), accessed as environment variables
 
 ## Platform compatibility
