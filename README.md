@@ -90,8 +90,8 @@ Again, we observe an _extremely rare_ period where mentions of St. Helens do not
 
 ## Notes
 
-* __Don't hardwire your Twitter access tokens into the code, or otherwise include them in any public-facing repository__.
-* __Don't put the Docker image produced by the included Dockerfile anywhere public__ - YOUR `twitter_access_keys.sh` FILE IS COPIED INTO THE IMAGE! Instead, map that file into e.g. a non-public Docker storage volume attached to the container.
-* Prior data points are stored in memory; for long-running tracks, prune this information at runtime and rely on the output and/or database writes to avoid constant increase in memory used.
+* __Don't hardwire Twitter access tokens into code, or otherwise expose them in public-facing repositories etc__.
+* __Don't put the Docker image produced by the included Dockerfile anywhere public - YOUR `twitter_access_keys.sh` is copied into the image!__ Instead, map that file into e.g. a non-public Docker storage volume attached to the container.
+* Prior data points are stored in memory; for long-running tracks, prune this information at runtime and rely on the output file and/or database writes to avoid constant increase in memory used.
 
 Happy tracking!
