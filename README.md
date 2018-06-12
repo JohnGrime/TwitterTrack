@@ -14,6 +14,7 @@ Mandatory:
 
 Optional:
 
+* Bash compatible shell (for example script)
 * [gnuplot](http://www.gnuplot.info) (for easy plotting of example output data)
 
 ## Platform compatibility
