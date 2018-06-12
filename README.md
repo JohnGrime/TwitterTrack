@@ -1,14 +1,20 @@
 # TwitterTrack
 
-A simple example interface into the Twitter stream API.
+A simple example interface into Twitter's stream API.
 
 Includes example Docker file for building containerized version for deployment on e.g. Amazon Web Services.
 
 ## Requirements
 
+Mandatory:
+
 * Node.js
 * `twitter-lite` node package
 * [Twitter developer access tokens](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html), accessible as environment variables
+
+Optional:
+
+* [gnuplot](www.gnuplot.info) (for easy plotting of example output data)
 
 ## Platform compatibility
 
