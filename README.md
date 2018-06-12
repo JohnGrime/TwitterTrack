@@ -28,10 +28,10 @@ To use the example below, we assume the presence of a Bash compatible shell (mos
 
 The `twitter_test.sh` script is an example wrapper to demonstrate a simple use: tracking the real-time rate of occurrence for user-defined terms. This script assumes the presence of a `twitter_access_keys.sh` file in the same directory, which exports the appropriate [Twitter access keys](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html) into the current shell environment, e.g.:
 
-	export TWITTER_CONSUMER_KEY=XXXXXXXXXX         # \  Obviously, these keys will not work; they should be
-	export TWITTER_CONSUMER_SECRET=XXXXXXXXXX      #  | replaced with your own keys. Furthermore, they should
-	export TWITTER_ACCESS_TOKEN_KEY=XXXXXXXXXX     #  | only be exported into a *temporary* shell env for
-	export TWITTER_ACCESS_TOKEN_SECRET=XXXXXXXXXX  # /  security, to prevent other programs reading them!
+	export TWITTER_CONSUMER_KEY=XXXXXXXXXX         # \  Obviously, these keys should be replaced with your
+	export TWITTER_CONSUMER_SECRET=XXXXXXXXXX      #  | own. Furthermore, they should only be exported into
+	export TWITTER_ACCESS_TOKEN_KEY=XXXXXXXXXX     #  | a *temporary* shell environment for security, to
+	export TWITTER_ACCESS_TOKEN_SECRET=XXXXXXXXXX  # /  reduce their exposure!
 
 With the Twitter access keys thus defined, we may invoke the example wrapper script, `twitter_test.sh`.
 
