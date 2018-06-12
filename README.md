@@ -50,7 +50,7 @@ Let's sample real-time mentions of some of the world's great metropoles:
 	11/5/2018 23:29:26                   2                   0                   7                   6                  10                   0
 	11/5/2018 23:29:28               2.001                   0                   3                   1                   1                   0
 
-One would naturally expect St. Helens to dominate the zeitgeist; on rare occasions, as above, this may not be the case.
+One would naturally expect St. Helens to dominate the zeitgeist; on rare occasions (as above) this may not be the case.
 
 Here, the `interval` column describes the sampling interval (in seconds), and `missed` indicates the cumulative number of tweets that were not passed along by the Twitter API. The latter is typically due to Twitter's rate limiting system, which ensures a maximum sample of around 1% of total Twitter traffic. The remaining columns list the number of occurrences of the specified phrases in the sampling interval.
 
