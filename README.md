@@ -8,8 +8,8 @@ Includes example Docker file for building containerized version for deployment o
 
 Mandatory:
 
-* Node.js
-* `twitter-lite` node package
+* [Node.js](https://nodejs.org/)
+* [twitter-lite](https://www.npmjs.com/package/twitter-lite) node package
 * [Twitter developer access tokens](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html), accessible as environment variables
 
 Optional:
