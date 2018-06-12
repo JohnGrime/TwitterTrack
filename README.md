@@ -73,14 +73,14 @@ The default entry point runs the example script with phrases `London Paris Berli
 
 	docker run --rm -it --name jtwitter john/twitter /bin/ash
 	./twitter_test.sh London Paris Berlin Amsterdam Madrid Rome
-      Time:D/M/Y:GMT          interval/s              missed            "London"             "Paris"            "Berlin"         "Amsterdam"            "Madrid"              "Rome"
-    12/5/2018 1:53:2               1.698                   0                   1                   1                   1                   0                   2                   0
-    12/5/2018 1:53:4               2.001                   0                   3                   0                   0                   1                   1                   0
-    12/5/2018 1:53:6               2.002                   0                   3                   3                   0                   0                   2                   1
-    12/5/2018 1:53:8                   2                   0                   6                   4                   0                   0                   1                   2
-   12/5/2018 1:53:10               2.003                   0                   0                   3                   3                   0                   0                   0
-   12/5/2018 1:53:12               2.003                   0                   2                   5                   0                   0                   2                   0
-   12/5/2018 1:53:14               2.001                   0                   5                   3                   0                   1                   2                   0
+	  Time:D/M/Y:GMT          interval/s              missed            "London"             "Paris"            "Berlin"         "Amsterdam"            "Madrid"              "Rome"
+	12/5/2018 1:53:2               1.698                   0                   1                   1                   1                   0                   2                   0
+	12/5/2018 1:53:4               2.001                   0                   3                   0                   0                   1                   1                   0
+	12/5/2018 1:53:6               2.002                   0                   3                   3                   0                   0                   2                   1
+	12/5/2018 1:53:8                   2                   0                   6                   4                   0                   0                   1                   2
+	12/5/2018 1:53:10              2.003                   0                   0                   3                   3                   0                   0                   0
+	12/5/2018 1:53:12              2.003                   0                   2                   5                   0                   0                   2                   0
+	12/5/2018 1:53:14              2.001                   0                   5                   3                   0                   1                   2                   0
 
 ## Notes
 
