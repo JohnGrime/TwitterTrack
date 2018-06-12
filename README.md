@@ -14,7 +14,7 @@ Mandatory:
 
 Optional:
 
-* [gnuplot](www.gnuplot.info) (for easy plotting of example output data)
+* [gnuplot](http://www.gnuplot.info) (for easy plotting of example output data)
 
 ## Platform compatibility
 
