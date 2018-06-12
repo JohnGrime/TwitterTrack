@@ -3,7 +3,8 @@
 let Twitter = require( "twitter-lite" );
 
 //
-// Some configuration details; twitterKeys from developer account => environment
+// Some configuration details; Twitter access keys (from developer account)
+// are read from shell environment variables.
 //
 let config = {
 
@@ -165,7 +166,7 @@ class TwitterStreamClient {
 
 		//
 		// If we have valid data coming in, then process it.
-		// Otherwise, we've got an error or a heartbeat signal.
+		// Otherwise, we've got an error or some sort of heartbeat signal.
 		//
 		this.client.stream( "statuses/filter", config.twitterFilters )
 		.on( "start", response => {
@@ -181,9 +182,9 @@ class TwitterStreamClient {
 				termTracker.missed = Math.max( data.limit.track, termTracker.missed );
 			}
 		})
-		.on( "ping",      () => { this.heartbeat(); console.log( "Ping!" ); })
+		.on( "ping",      () => { this.heartbeat(); })
 		.on( "error",  error => { this.timestamp = undefined; console.log( "Error:", error ); })
-		.on( "end", response => { this.timestamp = undefined; console.log( "Ending:", response ); });
+		.on( "end", response => { this.timestamp = undefined; });
 	}
 }
 
@@ -242,7 +243,7 @@ setTimeout( Tick, config.updateIntervalSecs*1000 );
 
 //
 // Tick function - update term stats and print some info. Also checks
-// heartbeat, and relaunches if needed.
+// heartbeat, and relaunches Twitter client if needed.
 //
 function Tick() {
 
