@@ -31,17 +31,17 @@ With the Twitter access tokens thus defined, we may invoke the wrapper script: l
 
 My testing produced the following output on `stdout`:
 
-      Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
-  11/5/2018 23:29:10                1.71                   0                   4                   5                   3                   0
-  11/5/2018 23:29:12               2.004                   0                   1                   1                   4                   0
-  11/5/2018 23:29:14               2.001                   0                   3                   5                   5                   0
-  11/5/2018 23:29:16               2.001                   0                   1                  11                   1                   0
-  11/5/2018 23:29:18                   2                   0                   1                   8                   3                   0
-  11/5/2018 23:29:20               2.003                   0                   2                   4                   7                   0
-  11/5/2018 23:29:22               2.005                   0                   1                   2                   5                   0
-  11/5/2018 23:29:24               2.007                   0                   3                   6                   4                   0
-  11/5/2018 23:29:26                   2                   0                   7                   6                  10                   0
-  11/5/2018 23:29:28               2.001                   0                   3                   1                   1                   0
+	Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
+	11/5/2018 23:29:10                1.71                   0                   4                   5                   3                   0
+	11/5/2018 23:29:12               2.004                   0                   1                   1                   4                   0
+	11/5/2018 23:29:14               2.001                   0                   3                   5                   5                   0
+	11/5/2018 23:29:16               2.001                   0                   1                  11                   1                   0
+	11/5/2018 23:29:18                   2                   0                   1                   8                   3                   0
+	11/5/2018 23:29:20               2.003                   0                   2                   4                   7                   0
+	11/5/2018 23:29:22               2.005                   0                   1                   2                   5                   0
+	11/5/2018 23:29:24               2.007                   0                   3                   6                   4                   0
+	11/5/2018 23:29:26                   2                   0                   7                   6                  10                   0
+	11/5/2018 23:29:28               2.001                   0                   3                   1                   1                   0
 
 If you have `gnuplot` installed, the outout of `twitter_test.sh` can be turned into a graph like so:
 
