@@ -26,7 +26,7 @@ To use the example below, we assume the presence of a Bash compatible shell (mos
 
 ## Example usage
 
-The `twitter_test.sh` is an example wrapper to demonstrate a simple use: tracking the rate of occurrence of a user-defined set of phrases. This script assumes the presence of a `twitter_access_keys.sh` file in the same directory, which exports the appropriate [Twitter access keys](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html) into the current shell environment, e.g.:
+The `twitter_test.sh` is an example wrapper to demonstrate a simple use: tracking the real-time rate of occurrence for user-defined terms. This script assumes the presence of a `twitter_access_keys.sh` file in the same directory, which exports the appropriate [Twitter access keys](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html) into the current shell environment, e.g.:
 
 	export TWITTER_CONSUMER_KEY=XXXXXXXXXX
 	export TWITTER_CONSUMER_SECRET=XXXXXXXXXX
@@ -54,7 +54,7 @@ One would naturally expect St. Helens to dominate the zeitgeist; on rare occasio
 
 Here, the `interval` column describes the sampling interval (in seconds), and `missed` indicates the cumulative number of tweets that were not passed along by the Twitter API. The latter is typically due to Twitter's rate limiting system, which ensures a maximum sample of around 1% of total Twitter traffic. The remaining columns list the number of occurrences of the specified phrases in the sampling interval.
 
-If you have `gnuplot` installed, the outout of `twitter_test.sh` can be turned into a graph like so ...
+If you have `gnuplot` installed, the output of `twitter_test.sh` can be turned into a graph:
 
 	gnuplot plot_output.gscr
 
@@ -64,9 +64,9 @@ If you have `gnuplot` installed, the outout of `twitter_test.sh` can be turned i
 
 ## Docker
 
-Included in this repository is a simple Dockerfile to create an image with the appropriate software installed for easy testing.
+Included in this repository is a simple Dockerfile to create a Docker image with the appropriate installed software.
 
-Build the image with a suitable name (e.g. `john/twittertrack`):
+To use the containerized example, build the Docker image from the appropirate directory using a suitable image "tag" (e.g. `john/twittertrack`):
 
 	docker build -t john/twittertrack .
 
