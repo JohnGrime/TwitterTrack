@@ -66,13 +66,13 @@ If you have `gnuplot` installed, the output of `twitter_test.sh` can be turned i
 
 Included in this repository is a simple Dockerfile to create a Docker image with the appropriate installed software.
 
-To use the containerized example, build the Docker image from the appropirate directory using a suitable image "tag" (e.g. `john/twittertrack`):
+To use the containerized example, build the Docker image from the appropriate directory specifying an image "tag" (e.g. `stuff/twittertrack`):
 
-	docker build -t john/twittertrack .
+	docker build -t stuff/twittertrack .
 
-The default entry point launches a shell wherein you can run the example script (e.g., assuming interactive shell and discarding modifications to the file system on exit):
+The default entry point for the Docker image will launch a shell wherein you can run the example script. For example, assuming an interactive shell and discarding modifications to the container file system on exit:
 
-	docker run --rm -it john/twittertrack
+	docker run --rm -it stuff/twittertrack
 	   Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
 	12/5/2018 2:15:55               1.686                   0                   1                   1                   1                   0
 	12/5/2018 2:15:57               2.001                   0                   3                   4                   1                   0
