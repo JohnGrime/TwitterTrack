@@ -26,12 +26,12 @@ To use the example below, we assume the presence of a Bash compatible shell (mos
 
 ## Example usage
 
-The `twitter_test.sh` is an example wrapper to demonstrate a simple use: tracking the real-time rate of occurrence for user-defined terms. This script assumes the presence of a `twitter_access_keys.sh` file in the same directory, which exports the appropriate [Twitter access keys](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html) into the current shell environment, e.g.:
+The `twitter_test.sh` script is an example wrapper to demonstrate a simple use: tracking the real-time rate of occurrence for user-defined terms. This script assumes the presence of a `twitter_access_keys.sh` file in the same directory, which exports the appropriate [Twitter access keys](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html) into the current shell environment, e.g.:
 
-	export TWITTER_CONSUMER_KEY=XXXXXXXXXX
-	export TWITTER_CONSUMER_SECRET=XXXXXXXXXX
-	export TWITTER_ACCESS_TOKEN_KEY=XXXXXXXXXX
-	export TWITTER_ACCESS_TOKEN_SECRET=XXXXXXXXXX
+	export TWITTER_CONSUMER_KEY=XXXXXXXXXX         # \
+	export TWITTER_CONSUMER_SECRET=XXXXXXXXXX      #  | Obviously, these keys will not work; they
+	export TWITTER_ACCESS_TOKEN_KEY=XXXXXXXXXX     #  | should be replaced with your own keys.
+	export TWITTER_ACCESS_TOKEN_SECRET=XXXXXXXXXX  # /
 
 With the Twitter access keys thus defined, we may invoke the example wrapper script, `twitter_test.sh`.
 
