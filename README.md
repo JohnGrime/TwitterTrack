@@ -35,7 +35,7 @@ The `twitter_test.sh` script is an example wrapper to demonstrate a simple use: 
 
 With the Twitter access keys thus defined, we may invoke the example wrapper script, `twitter_test.sh`.
 
-Let's sample real-time mentions of some of the world's great metropolises:
+Let's sample real-time mentions of some of the world's great metropoles:
 
 	./twitter_test.sh London "New York" Paris "St. Helens"
 	    Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
