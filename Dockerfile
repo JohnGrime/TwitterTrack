@@ -10,9 +10,9 @@ RUN apk add --no-cache nodejs nodejs-npm
 # Install node modules we're using
 RUN npm install --save twitter-lite
 
-
+# Assumes presence of 
 COPY twitter_track.js        ./
 COPY twitter_access_keys.sh  ./
 COPY twitter_test.sh         ./
 
-CMD ["./twitter_test.sh", "London Paris Berlin Amsterdam Madrid Rome"]
+CMD ["/bin/ash"]

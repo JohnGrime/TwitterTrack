@@ -69,18 +69,22 @@ Build the image with a suitable name (e.g. `john/twittertrack`):
 
 	docker build -t john/twittertrack .
 
-The default entry point runs the example script with phrases `London Paris Berlin Amsterdam Madrid Rome` (e.g., assuming itneractive shell and not saving local file system changes):
+The default entry point launches a shell wherein you can run the example script (e.g., assuming interactive shell and discarding modifications to the file system on exit):
 
-	docker run --rm -it --name jtwitter john/twitter /bin/ash
-	./twitter_test.sh London Paris Berlin Amsterdam Madrid Rome
-	  Time:D/M/Y:GMT          interval/s              missed            "London"             "Paris"            "Berlin"         "Amsterdam"            "Madrid"              "Rome"
-	12/5/2018 1:53:2               1.698                   0                   1                   1                   1                   0                   2                   0
-	12/5/2018 1:53:4               2.001                   0                   3                   0                   0                   1                   1                   0
-	12/5/2018 1:53:6               2.002                   0                   3                   3                   0                   0                   2                   1
-	12/5/2018 1:53:8                   2                   0                   6                   4                   0                   0                   1                   2
-	12/5/2018 1:53:10              2.003                   0                   0                   3                   3                   0                   0                   0
-	12/5/2018 1:53:12              2.003                   0                   2                   5                   0                   0                   2                   0
-	12/5/2018 1:53:14              2.001                   0                   5                   3                   0                   1                   2                   0
+	docker run --rm -it john/twittertrack
+	   Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
+	12/5/2018 2:15:55               1.686                   0                   1                   1                   1                   0
+	12/5/2018 2:15:57               2.001                   0                   3                   4                   1                   0
+	12/5/2018 2:15:59               2.002                   0                   4                   2                   1                   0
+	12/5/2018 2:16:1                    2                   0                   2                   2                   2                   0
+	12/5/2018 2:16:3                2.002                   0                   2                   3                   3                   0
+	12/5/2018 2:16:5                    2                   0                   0                   6                   3                   0
+	12/5/2018 2:16:7                2.002                   0                   2                   2                   1                   0
+	12/5/2018 2:16:9                2.006                   0                   0                   1                   0                   0
+	12/5/2018 2:16:11               2.002                   0                   1                   2                   3                   0
+	12/5/2018 2:16:13               2.001                   0                   5                   5                   4                   0
+
+Again, we observe an _extremely rare_ period where mentions of St. Helens do not dominate the Twitter discussion.
 
 ## Notes
 
