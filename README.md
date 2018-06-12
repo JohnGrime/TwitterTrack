@@ -49,6 +49,8 @@ Let's sample real-time mentions of the world's great metropolises:
 	11/5/2018 23:29:26                   2                   0                   7                   6                  10                   0
 	11/5/2018 23:29:28               2.001                   0                   3                   1                   1                   0
 
+As we can see, St. Helens easily dominates the zeitgeist. On some rare occasions, such as above, this may not be the case.
+
 Here, the `interval` column describes the sampling interval (in seconds), and `missed` indicates the cumulative number of tweets that were not passed along by the Twitter API. The latter is typically due to Twitter's rate limiting system enforcing a sample of only around 1% of the total Twitter traffic being passed along by the standard stream API.
 
 If you have `gnuplot` installed, the outout of `twitter_test.sh` can be turned into a graph like so:
