@@ -31,7 +31,7 @@ With the Twitter access tokens thus defined, we may invoke the wrapper script: l
 
 My testing produced the following output on `stdout`:
 
-	Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
+	    Time:D/M/Y:GMT          interval/s              missed            "London"          "New York"             "Paris"        "St. Helens"
 	11/5/2018 23:29:10                1.71                   0                   4                   5                   3                   0
 	11/5/2018 23:29:12               2.004                   0                   1                   1                   4                   0
 	11/5/2018 23:29:14               2.001                   0                   3                   5                   5                   0
@@ -53,6 +53,7 @@ Producing an encapsulated PostScript file:
 
 ## Notes
 
-Don't hardwire your Twitter access tokens into the code, or otherwise include them in any public-facing repository.
+* Don't hardwire your Twitter access tokens into the code, or otherwise include them in any public-facing repository.
+* Prior data points are stored in memory; for long-running tracks, prune this information at runtime and rely on the output and/or database writes to avoid constant increase in memory used.
 
 Happy tracking!
