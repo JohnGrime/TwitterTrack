@@ -12,7 +12,7 @@ RUN npm install --save twitter-lite
 
 # Assumes presence of 
 COPY twitter_track.js        ./
-COPY twitter_access_keys.sh  ./
+COPY twitter_access_keys.sh  ./ # <- just for testing! There are better approaches, see README.md
 COPY twitter_test.sh         ./
 
 CMD ["/bin/ash"]
