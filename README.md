@@ -86,12 +86,12 @@ The default entry point for the Docker image will launch a shell, wherein you ca
 	12/5/2018 2:16:11               2.002                   0                   1                   2                   3                   0
 	12/5/2018 2:16:13               2.001                   0                   5                   5                   4                   0
 
-Again, we observe an _extremely rare_ period where mentions of St. Helens do not dominate the Twitter discussion.
+Again, we observe a rare period where mentions of St. Helens do not dominate the Twitter discussion.
 
 ## Notes
 
 * __Don't hardwire Twitter access tokens into code, or otherwise expose them in public-facing repositories etc__.
-* __Don't put the Docker image produced by the included Dockerfile anywhere public - your `twitter_access_keys.sh` file is copied in!__ Map that file into e.g. a private Docker storage volume attached to the container.
+* __Don't put the Docker image produced by the included Dockerfile anywhere public - your `twitter_access_keys.sh` file is copied in!__ Map that file into e.g. a private Docker storage volume attached to the container, or pass the environment variables in using the `docker run` command line (via `-e`).
 * Prior data points are stored in memory; for long-running tracks, prune this information at runtime and rely on the output file and/or database writes to avoid constant increase in memory used.
 
 Happy tracking!
