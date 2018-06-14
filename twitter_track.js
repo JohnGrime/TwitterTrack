@@ -107,8 +107,7 @@ class TermTracker {
 		return line;
 	}
 
-	printTabulated( padding, lastN = 0 )
-	{
+	printTabulated( padding, lastN = 0 ) {
 		const pad = (padding<10) ? (10) : (padding);
 		const maxN = this.history.length;
 		const N = (lastN>maxN) ? (maxN) : (lastN);
